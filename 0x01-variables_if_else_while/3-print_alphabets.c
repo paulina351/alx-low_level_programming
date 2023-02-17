@@ -6,22 +6,13 @@
  */
 int main(void)
 {
-	char c;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	char d;
-
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') {
-			putchar(c);
-			c++;
-		}
-	while
-		(d <= 'z') {
-			putchar(d);
-			c++;
-		}
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alp[i]);
+	}
 	putchar('\n');
 	return (0);
 }
