@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <unlstd.h>
 /**
- * Main: is the c program that prints standard line error
+ * Main - is the entry point of the c program
  * Return: 1 (success)
  */
 int main(void)
