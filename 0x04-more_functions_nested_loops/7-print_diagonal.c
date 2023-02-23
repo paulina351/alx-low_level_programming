@@ -2,28 +2,24 @@
 
 /**
  * print_diagonal - draws a line
+ * @n: to be printed
  *
  * Return: void.
  */
 
 void print_diagonal(int n)
 {
-	int b, c;
+	int a, b;
 
-	if (n <= 1)
-	{
+	if (n <= 0)
 		_putchar('\n');
-	}
-	else
+	for (a = 0; a < n; a++)
 	{
-	for (b = 1; b <= n; b++)
-	{
-		for (c = 1; c < b; b++)
+		for (b = 0; b < a; b++)
 		{
 			_putchar(' ');
 		}
 		_putchar('\\');
 		_putchar('\n');
-	}
 	}
 }
