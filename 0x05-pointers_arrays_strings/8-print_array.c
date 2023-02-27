@@ -3,6 +3,7 @@
 
 /**
  * print_array - a function that prints
+ * @a: array name
  * @n: number of element to be printed
  * Return: a and n input
  */
