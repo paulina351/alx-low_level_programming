@@ -30,6 +30,14 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 		if (max_dog->name == NULL)
 		{
+			free(max_dog);
+			return (NULL);
+		}
+
+		max_dog->owner = malloc(sizeof(char) * own_1);
+
+		if (max_dog->owner == NULL)
+		{
 			free(max_dog->name);
 			free(max_dog);
 			return (NULL);
@@ -77,7 +85,7 @@ char *_strcpy(char *dest, char *src)
 
 	for (i = 0; src[i] != '\0'; i++)
 	{
-		dest[i] = src[i]
+		dest[i] = src[i];
 	}
 
 	dest[i++] = '\0';
