@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-printf("(A tortoise, having pretty good sense of a hare's nature,)\n");
-printf("(challenges one to a race.)\n");
+printf("A tortoise, having pretty good sense of a hare's nature,\n");
+printf("challenges one to a race.\n");
 return (0);
 }
