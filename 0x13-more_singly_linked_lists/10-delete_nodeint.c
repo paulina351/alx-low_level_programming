@@ -12,7 +12,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *delete, *select = *head;
 	unsigned int list;
 
-	if (copy == NULL)
+	if (select == NULL)
 		return (-1);
 
 	if (index == 0)
@@ -34,4 +34,4 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	select->next = delete->next;
 	free(delete);
 	return (1);
-}	
+}
