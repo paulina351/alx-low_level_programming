@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-void first(void) __attribute__ ((constructor));
+void tortoise(void) __attribute__ ((constructor));
 
 /**
- * first - function that prints
+ * tortoise - function that prints
  * Return: nothing
  */
-void first(void)
+void tortoise(void)
 {
 	printf("You're best! and yet, you must allow,\n");
 	printf("I bore my house upon my back!\n");
