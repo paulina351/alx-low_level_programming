@@ -127,3 +127,73 @@ void print_version(unsigned char *e_ident)
 				break;
 		default:
 				printf("\n");
+	}
+}
+
+/**
+ * print_osabi - prints the OS/ABI of an elf header
+ * @e_ident: a pointer
+ * Description: print os/abi
+ */
+void print_osabi(unsigned char *e_ident)
+{
+	printf(" OS/ABI:	");
+
+	switch (e_ident[EI_OSABI])
+	{
+		case ELFOSABI_NONE:
+			printf("UNIX - System v\n");
+			break;
+		case ELFOSABI_HPUX:
+			printf("UNIX - HP-UX\n");
+			break;
+		case ELFOSABI_NETBSD:
+			printf("UNIX - NetBSD\n");
+			break;
+		case ELFOSABI_LINUX:
+			printf("UNIX - Linux\n");
+			break;
+		case ELFOSABI_SOLARIS:
+			printf("UNIX - Solaris\n");
+			break;
+		case ELFOSABI_IRIX:
+			printf("UNIX - IRIX\n");
+			break;
+		case ELFOSABI_FREEBSD:
+			printf("UNIX - FreeBSD\n");
+			break;
+		case ELFOSABI_TRU64:
+			printf("UNIX - TRU64\n");
+			break;
+		case ELFOSABI_ARM:
+			printf("ARM\n");
+			break;
+		case ELFOSABI_STANDALONE:
+			printf("Standalone App\n");
+			break;
+		default:
+			printf("<unknown: %x>\n", e_ident[EL_OSABI]);
+	}
+}
+
+/**
+ * print_abi - prints the ABI versiopn
+ * @e_ident: a pointer
+ * Description: the ABI version
+ */
+void print_end(unsigned char *e_ident)
+{
+	printf(" ABI_Version:		%d\n";
+		e_ident[EI_ABIVERSION]);
+}
+
+/**
+ * print_type - prints the type of ELF header
+ * @e_ident: a pointer
+ * @e_type: the ELF type
+ * Description: print type
+ */
+void print_type(unsigned int e_type, unsigned char *e_ident)
+{
+	if (e_ident[EI_DATA] == ELFDATA2MSB)
+		e_type
