@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * binary_yo_uint - converts a binary number to unsigned int
+ * binary_to_uint - converts a binary number to unsigned int
  * @b: pointing o a string
  * Return: converted number, 0 or NULL
  */
@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int add = 0;
 	unsigned int mul = 0;
 	const char *str;
-	
+
 	if (b == NULL)
 		return (0);
 
