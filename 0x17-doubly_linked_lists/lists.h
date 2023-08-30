@@ -29,5 +29,10 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index);
 int sum_dlistint(dlistint_t *head);
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n);
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+int _strlen(char *s);
+int f4(int len, char *argv);
+int f5(int len, char *argv);
+int f6(char *argv);
+int main(int argc, char *argv[]);
 
 #endif
