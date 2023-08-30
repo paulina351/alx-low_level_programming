@@ -33,6 +33,6 @@ int _strlen(char *s);
 int f4(int len, char *argv);
 int f5(int len, char *argv);
 int f6(char *argv);
-int main(int argc, char *argv[]);
+
 
 #endif
